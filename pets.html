@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,52 +24,32 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="./assets/hamburger.js" defer></script>
-    <script src="./assets/index.js" defer></script>
+    <script src="./assets/pet.js" defer></script>
+    <title>All pets</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="top-shelf">
           <a href="#"> Logo </a>
-
           <span class="material-icons" id="nav-hamburger">reorder</span>
         </div>
 
         <nav>
-          <a href="register.html">Register</a>
-          <a href="forgot.html">New password</a>
+          <a href="home.html">Home</a>
+          <a href="addpet.html">Add pet</a>
+          <button type="click" id="logout" class="btn hedaer">Log out</button>
         </nav>
       </div>
     </header>
-
     <main>
       <div class="container">
-        <h1 class="title">Login</h1>
-        <form name="loginForm">
-          <div class="control">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="email@email.com"
-              required
-            />
+        <div class="containter-top">
+          <div class="container-text">
+            <h2>PETS LIST</h2>
           </div>
-          <div class="control">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div class="control">
-            <button type="submit" class="btn">Login</button>
-          </div>
-        </form>
+        </div>
+        <div class="content" id="content"></div>
       </div>
     </main>
   </body>

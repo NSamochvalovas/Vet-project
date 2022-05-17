@@ -24,28 +24,22 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="./assets/hamburger.js" defer></script>
-    <script src="./assets/index.js" defer></script>
+    <script src="./assets/forgot.js" defer></script>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="top-shelf">
           <a href="#"> Logo </a>
-
-          <span class="material-icons" id="nav-hamburger">reorder</span>
-        </div>
-
-        <nav>
-          <a href="register.html">Register</a>
-          <a href="forgot.html">New password</a>
-        </nav>
       </div>
     </header>
-
     <main>
       <div class="container">
-        <h1 class="title">Login</h1>
+        <h1 class="title">Forgot you password</h1>
+        <p>
+          Please enter you email address. New generated password will be sent to
+          your email
+        </p>
         <form name="loginForm">
           <div class="control">
             <label for="email">Email</label>
@@ -58,17 +52,7 @@
             />
           </div>
           <div class="control">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div class="control">
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn">Send</button>
           </div>
         </form>
       </div>
